@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link href="https://fonts.cdnfonts.com/css/twirly-ballerina" rel="stylesheet">
+    <link rel="stylesheet" href="פרויקט js/css/login.css">
+    <title>Login Candy Crush</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login_box">
+            <div id="login-form" class="form active">
+                <div class="login_header">
+                    <span>Login</span>
+                </div>
+                
+                <div class="input_box">
+                    <input type="text" id="login-user" class="input_field" required>
+                    <label for="login-user" class="label">UserName</label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="login-pass" class="input_field" required>
+                    <label for="login-pass" class="label">Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember-my">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <input type="submit" class="input-submit" value="Login" onclick="loginUser()">
+                </div>
+                <div class="register">
+                    <span>Don't have account?
+                        <a href="#" onclick="toggleForms()">Register</a>
+                    </span>
+                </div>
+            </div>
+
+            <div id="register-form" class="form">
+                <div class="login_header">
+                    <span>Register</span>
+                </div>
+                <div class="input_box">
+                    <input type="text" id="register-user" class="input_field" required>
+                    <label for="register-user" class="label">UserName</label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="register-pass" class="input_field" required>
+                    <label for="register-pass" class="label">Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="email" id="register-email" class="input_field" required>
+                    <label for="email-user" class="label">email</label>
+                    <i class='bx bx-mail-send icon'></i>
+                </div>
+                
+                
+                <div class="input_box">
+                    <input type="submit" class="input-submit" value="Register" onclick="registerUser()">
+                </div>
+                <div class="register">
+                    <span>Already have an account?
+                        <a href="#" onclick="toggleForms()">Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="פרויקט js/js/login.js"></script>
+</html>
